@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  word-break: keep-all;
+}
+
+body {
+  background: rgb(24, 24, 27);
+  color: rgb(209, 213, 219);
+}
+
+:root {
+  --primary: #fd7e14;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+textarea {
+  resize: none;
+  outline: 0;
+}
+
+textarea:focus {
+  border: none;
+  outline: 0;
+}
