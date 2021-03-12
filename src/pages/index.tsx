@@ -1,32 +1,19 @@
 import * as React from 'react'
 import { Link, graphql, PageProps } from 'gatsby'
 
-import Layout from '../components/layout'
 import SEO from '../components/seo'
+import { ReHeader } from 'components'
 
 type Data = any
 interface State {}
 
 const BlogIndex = ({ data, location }: PageProps<Data>) => {
-  const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
 
-  if (posts.length === 0) {
-    return (
-      <Layout location={location} title={siteTitle}>
-        <SEO title="All posts" />
-        <p>
-          No blog posts found. Add markdown posts to "content/blog" (or the
-          directory you specified for the "gatsby-source-filesystem" plugin in
-          gatsby-config.js).
-        </p>
-      </Layout>
-    )
-  }
-
   return (
-    <Layout location={location} title={siteTitle}>
+    <>
       <SEO title="All posts" />
+      <ReHeader />
       <ol style={{ listStyle: `none` }}>
         {posts.map((post: any) => {
           const title = post.frontmatter.title || post.fields.slug
@@ -59,7 +46,7 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
           )
         })}
       </ol>
-    </Layout>
+    </>
   )
 }
 
