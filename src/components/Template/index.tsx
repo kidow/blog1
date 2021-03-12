@@ -1,14 +1,14 @@
 import * as React from 'react'
 import { Link, graphql, PageProps } from 'gatsby'
 import { ReFooter, ReHeader } from 'components'
+import ReComment from 'components/Comment'
 
 type Data = any
 
-const Divider = () => <div className="my-10 w-full bg-gray-700 h-px" />
+const Divider = () => <div className="my-10 w-full bg-gray-800 h-px" />
 
 const BlogPostTemplate = ({ data, location }: PageProps<Data>) => {
   const post = data.markdownRemark
-  const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
 
   return (
@@ -58,6 +58,10 @@ const BlogPostTemplate = ({ data, location }: PageProps<Data>) => {
               </Link>
             </div>
           )}
+        </div>
+        <Divider />
+        <div>
+          <ReComment repo="kidow/blog" theme="github-dark" />
         </div>
         <Divider />
         <div className="text-xs md:text-sm shadow-sm text-gray-400 font-medium bg-black rounded-lg p-4">
