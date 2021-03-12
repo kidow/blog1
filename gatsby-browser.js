@@ -1,6 +1,4 @@
-import 'typeface-montserrat'
-import 'typeface-merriweather'
-
 import './src/global.css'
+import './src/markdown.css'
 
-import 'prismjs/themes/prism.css'
+import 'prismjs/themes/prism-tomorrow.css'
