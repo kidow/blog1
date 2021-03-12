@@ -2,7 +2,7 @@ import * as React from 'react'
 import { graphql, PageProps } from 'gatsby'
 
 import SEO from '../components/seo'
-import { ReCard, ReHeader } from 'components'
+import { ReCard, ReFooter, ReHeader } from 'components'
 
 type Data = any
 
@@ -35,6 +35,11 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
               </ul>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="bg-black">
+        <div className="container mx-auto">
+          <ReFooter />
         </div>
       </div>
     </>
