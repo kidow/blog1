@@ -10,9 +10,9 @@ interface Props {
 }
 
 const ReSEO: React.FunctionComponent<Props> = ({
-  description,
-  lang,
-  meta,
+  description = '',
+  lang = 'en',
+  meta = [],
   title
 }) => {
   const { site } = useStaticQuery(
@@ -22,9 +22,6 @@ const ReSEO: React.FunctionComponent<Props> = ({
           siteMetadata {
             title
             description
-            social {
-              twitter
-            }
           }
         }
       }
@@ -62,10 +59,6 @@ const ReSEO: React.FunctionComponent<Props> = ({
           content: `summary`
         },
         {
-          name: `twitter:creator`,
-          content: site.siteMetadata?.social?.twitter || ``
-        },
-        {
           name: `twitter:title`,
           content: title
         },
@@ -73,7 +66,7 @@ const ReSEO: React.FunctionComponent<Props> = ({
           name: `twitter:description`,
           content: metaDescription
         }
-      ].concat(meta!)}
+      ].concat(meta)}
     />
   )
 }
