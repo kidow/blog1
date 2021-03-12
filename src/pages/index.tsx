@@ -25,7 +25,7 @@ const IndexPage = ({ data, location }: PageProps<Data>) => {
                       title={title}
                       date={post.frontmatter.date}
                       description={post.frontmatter.description || post.excerpt}
-                      thumbnail="https://firebasestorage.googleapis.com/v0/b/kidow-v3.appspot.com/o/thumbnail%2F1615263205139?alt=media&token=4711f71a-f38a-4220-821d-145000fc2420"
+                      thumbnail={post.frontmatter.thumbnail || ''}
                       url={post.fields.slug}
                     />
                   )
@@ -72,6 +72,7 @@ export const pageQuery = graphql`
           date(formatString: "YYYY년 MM월 DD일")
           title
           description
+          thumbnail
         }
       }
     }

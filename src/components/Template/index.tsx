@@ -117,12 +117,13 @@ export const pageQuery = graphql`
     }
     markdownRemark(id: { eq: $id }) {
       id
-      excerpt(pruneLength: 160)
+      excerpt(pruneLength: 40)
       html
       frontmatter {
         title
         date(formatString: "YYYY년 MM월 DD일")
         description
+        thumbnail
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {
