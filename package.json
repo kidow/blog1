@@ -33,8 +33,12 @@
     "@types/node": "^14.14.33",
     "@types/react": "^17.0.3",
     "@types/react-dom": "^17.0.2",
+    "autoprefixer": "^10.2.5",
+    "gatsby-plugin-postcss": "^4.0.0",
     "gatsby-plugin-root-import": "^2.0.6",
-    "prettier": "2.2.1"
+    "postcss": "^8.2.8",
+    "prettier": "2.2.1",
+    "tailwindcss": "^2.0.3"
   },
   "homepage": "https://kidow.me",
   "keywords": [
