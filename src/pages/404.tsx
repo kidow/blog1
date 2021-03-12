@@ -1,31 +1,19 @@
-import * as React from 'react'
-import { graphql, PageProps } from 'gatsby'
+import React, { useEffect } from 'react'
+import { useHistory } from 'react-router-dom'
 
-import Layout from '../components/layout'
 import SEO from '../components/seo'
 
-type Data = any
-
-const NotFoundPage = ({ data, location }: PageProps<Data>) => {
-  const siteTitle = data.site.siteMetadata.title
-
+const NotFoundPage = () => {
+  const { push } = useHistory()
+  useEffect(() => {
+    push('/')
+  }, [])
   return (
-    <Layout location={location} title={siteTitle}>
+    <>
+      <div>asd</div>
       <SEO title="404: Not Found" />
-      <h1>404: Not Found</h1>
-      <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-    </Layout>
+    </>
   )
 }
 
 export default NotFoundPage
-
-export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`
