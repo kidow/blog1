@@ -45,7 +45,11 @@ const BlogPostTemplate = ({ data, location }: PageProps<Data>) => {
           {previous && (
             <div className="flex-1 text-left">
               <div className="text-gray-600">이전 글</div>
-              <Link to={previous.fields.slug} rel="prev">
+              <Link
+                to={previous.fields.slug}
+                rel="prev"
+                className="hover:underline"
+              >
                 {previous.frontmatter.title}
               </Link>
             </div>
@@ -53,7 +57,11 @@ const BlogPostTemplate = ({ data, location }: PageProps<Data>) => {
           {next && (
             <div className="flex-1 text-right">
               <div className="text-gray-600">다음 글</div>
-              <Link to={next.fields.slug} rel="next">
+              <Link
+                to={next.fields.slug}
+                rel="next"
+                className="hover:underline"
+              >
                 {next.frontmatter.title}
               </Link>
             </div>
@@ -113,7 +121,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "YYYY년 MM월 DD일")
         description
       }
     }
