@@ -1,10 +1,14 @@
-import React, { createRef, FunctionComponent, useLayoutEffect } from 'react'
+import React, {
+  createRef,
+  FunctionComponent,
+  memo,
+  useLayoutEffect
+} from 'react'
 
 interface Props {
   repo: string
   theme: string
 }
-interface State {}
 
 const ReComment: FunctionComponent<Props> = ({ repo, theme }) => {
   const ref = createRef<HTMLDivElement>()
@@ -29,4 +33,4 @@ const ReComment: FunctionComponent<Props> = ({ repo, theme }) => {
 
 ReComment.displayName = 'Utterances'
 
-export default ReComment
+export default memo(ReComment)
