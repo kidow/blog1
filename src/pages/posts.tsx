@@ -1,14 +1,12 @@
-import * as React from 'react'
-import { graphql, Link, PageProps } from 'gatsby'
-
-import SEO from '../components/seo'
 import { ReCard, ReFooter, ReHeader } from 'components'
+import SEO from 'components/seo'
+import { graphql, PageProps } from 'gatsby'
+import React from 'react'
 
 type Data = any
 
-const IndexPage = ({ data, location }: PageProps<Data>) => {
+const PostsPage = ({ data }: PageProps<Data>) => {
   const posts = data.allMarkdownRemark.nodes
-
   return (
     <>
       <SEO title="All posts" />
@@ -37,15 +35,6 @@ const IndexPage = ({ data, location }: PageProps<Data>) => {
           </div>
         </div>
       </div>
-      {posts.length > 12 && (
-        <div className="h-20 flex items-center justify-center mx-auto">
-          <Link to="/posts">
-            <button className="text-center w-72 p-3 text-sm rounded bg-gray-800">
-              게시글 전체보기
-            </button>
-          </Link>
-        </div>
-      )}
       <div className="bg-black">
         <div className="container mx-auto">
           <ReFooter />
@@ -55,7 +44,7 @@ const IndexPage = ({ data, location }: PageProps<Data>) => {
   )
 }
 
-export default IndexPage
+export default PostsPage
 
 export const pageQuery = graphql`
   query {
