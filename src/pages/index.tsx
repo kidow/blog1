@@ -1,8 +1,6 @@
 import * as React from 'react'
 import { graphql, Link, PageProps } from 'gatsby'
-
-import SEO from '../components/seo'
-import { ReCard, ReFooter, ReHeader } from 'components'
+import { ReCard, ReFooter, ReHeader, ReSEO } from 'components'
 
 type Data = any
 
@@ -11,7 +9,7 @@ const IndexPage = ({ data, location }: PageProps<Data>) => {
 
   return (
     <>
-      <SEO title="All posts" />
+      <ReSEO title="All posts" />
       <ReHeader />
       <div className="min-h-screen">
         <div>

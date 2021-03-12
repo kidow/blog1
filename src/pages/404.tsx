@@ -1,10 +1,11 @@
-import SEO from '../components/seo'
+import React from 'react'
+import { ReSEO } from 'components'
 
 const NotFoundPage = () => {
   return (
     <>
       <div>asd</div>
-      <SEO title="404: Not Found" />
+      <ReSEO title="404: Not Found" />
     </>
   )
 }

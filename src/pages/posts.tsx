@@ -1,5 +1,4 @@
-import { ReCard, ReFooter, ReHeader } from 'components'
-import SEO from 'components/seo'
+import { ReCard, ReFooter, ReHeader, ReSEO } from 'components'
 import { graphql, PageProps } from 'gatsby'
 import React from 'react'
 
@@ -9,7 +8,7 @@ const PostsPage = ({ data }: PageProps<Data>) => {
   const posts = data.allMarkdownRemark.nodes
   return (
     <>
-      <SEO title="All posts" />
+      <ReSEO title="All posts" />
       <ReHeader />
       <div className="min-h-screen">
         <div>
