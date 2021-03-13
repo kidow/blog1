@@ -5,15 +5,15 @@ import { useStaticQuery, graphql } from 'gatsby'
 interface Props {
   title: string
   meta?: any[]
-  lang?: string
   description?: string
+  thumbnail?: string
 }
 
 const ReSEO: React.FunctionComponent<Props> = ({
   description = '',
-  lang = 'en',
   meta = [],
-  title
+  title,
+  thumbnail
 }) => {
   const { site } = useStaticQuery(
     graphql`
@@ -30,10 +30,11 @@ const ReSEO: React.FunctionComponent<Props> = ({
 
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
+  const IMAGE = thumbnail || ''
   return (
     <Helmet
       htmlAttributes={{
-        lang
+        lang: 'ko'
       }}
       title={title}
       titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : ``}
@@ -44,6 +45,10 @@ const ReSEO: React.FunctionComponent<Props> = ({
         },
         {
           property: `og:title`,
+          content: title
+        },
+        {
+          property: 'og:site_name',
           content: title
         },
         {
