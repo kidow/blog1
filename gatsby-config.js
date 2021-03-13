@@ -2,7 +2,7 @@ const path = require('path')
 
 module.exports = {
   siteMetadata: {
-    title: `개발 블로그 - Kidow`,
+    title: `Kidow`,
     author: {
       name: `Kyle Mathews`,
       summary: `who lives and works in San Francisco building useful things.`
@@ -127,7 +127,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `개발 블로그 - Kidow`,
+        name: `Kidow`,
         short_name: `Blog`,
         start_url: `/`,
         background_color: `#ffffff`,

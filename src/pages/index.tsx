@@ -9,7 +9,7 @@ const IndexPage = ({ data }: PageProps<Data>) => {
 
   return (
     <>
-      <ReSEO title="All posts" />
+      <ReSEO title="개발 블로그" />
       <ReHeader />
       <div className="min-h-screen">
         <div>

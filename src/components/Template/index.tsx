@@ -1,18 +1,22 @@
 import * as React from 'react'
 import { Link, graphql, PageProps } from 'gatsby'
-import { ReFooter, ReHeader } from 'components'
-import ReComment from 'components/Comment'
+import { ReFooter, ReHeader, ReComment, ReSEO } from 'components'
 
 type Data = any
 
 const Divider = () => <div className="my-10 w-full bg-gray-800 h-px" />
 
-const BlogPostTemplate = ({ data }: PageProps<Data>) => {
+const BlogPostTemplate = ({ data, path }: PageProps<Data>) => {
   const post = data.markdownRemark
   const { previous, next } = data
-
   return (
     <>
+      <ReSEO
+        title={post.frontmatter.title}
+        description={post.frontmatter.description}
+        thumbnail={post.frontmatter.thumbnail}
+        url={decodeURI(path)}
+      />
       <div className="container max-w-screen-sm mx-auto">
         <ReHeader />
       </div>
