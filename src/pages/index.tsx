@@ -4,7 +4,7 @@ import { ReCard, ReFooter, ReHeader, ReSEO } from 'components'
 
 type Data = any
 
-const IndexPage = ({ data, location }: PageProps<Data>) => {
+const IndexPage = ({ data }: PageProps<Data>) => {
   const posts = data.allMarkdownRemark.nodes
 
   return (

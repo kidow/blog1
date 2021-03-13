@@ -7,7 +7,7 @@ type Data = any
 
 const Divider = () => <div className="my-10 w-full bg-gray-800 h-px" />
 
-const BlogPostTemplate = ({ data, location }: PageProps<Data>) => {
+const BlogPostTemplate = ({ data }: PageProps<Data>) => {
   const post = data.markdownRemark
   const { previous, next } = data
 
@@ -18,7 +18,7 @@ const BlogPostTemplate = ({ data, location }: PageProps<Data>) => {
       </div>
       <main className="container mx-auto max-w-screen-sm pb-10">
         <img
-          src="https://firebasestorage.googleapis.com/v0/b/kidow-v3.appspot.com/o/thumbnail%2F1615263205139?alt=media&token=4711f71a-f38a-4220-821d-145000fc2420"
+          src={post.frontmatter.thumbnail}
           alt="thumbnail"
           className="object-cover h-full w-full"
         />
