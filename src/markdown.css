@@ -85,3 +85,7 @@ pre + h4 {
 code {
   word-break: break-word;
 }
+
+#markdown a:hover {
+  text-decoration: underline !important;
+}
