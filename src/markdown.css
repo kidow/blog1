@@ -49,10 +49,10 @@ p + h4 {
   margin-top: 2.5rem;
 }
 
-#markdown pre + h1,
-pre + h2,
-pre + h3,
-pre + h4 {
+#markdown .gatsby-highlight + h1,
+.gatsby-highlight + h2,
+.gatsby-highlight + h3,
+.gatsby-highlight + h4 {
   margin-top: 2.5rem;
 }
 

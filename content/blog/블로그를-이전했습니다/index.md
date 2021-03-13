@@ -1,6 +1,6 @@
 ---
-title: 블로그를 이전했습니다.
-date: '2021-03-13T09:00:01.284Z'
+title: 블로그를 이전했습니다
+date: '2021-03-13T12:32:52.573645'
 description: '새로운 기술로 다시 찾아왔습니다.'
 thumbnail: 'https://firebasestorage.googleapis.com/v0/b/kidow-v3.appspot.com/o/thumbnail%2F1615112169110?alt=media&token=e90b9445-1313-43b6-be87-0b4d7a5ee837'
 ---
