@@ -11,6 +11,7 @@ module.exports = {
     siteUrl: `https://kidow.me`
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     'gatsby-plugin-postcss',
     {
       resolve: 'gatsby-plugin-root-import',
