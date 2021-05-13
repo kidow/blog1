@@ -1,6 +1,6 @@
 ---
 title: '프로젝트 기초 세팅'
-date: '2021-04-04T16:46:45.162265'
+date: '2021-04-01T16:46:45.162265'
 description: '프로젝트를 시작할 때 항상 고정으로 해주는 세팅들'
 thumbnail: 'https://firebasestorage.googleapis.com/v0/b/kidow-v3.appspot.com/o/thumbnail%2Fsetting.png?alt=media&token=c18dcd49-1b27-456e-b139-f80f755d1405'
 ---
