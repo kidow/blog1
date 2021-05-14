@@ -11,7 +11,6 @@ module.exports = {
     siteUrl: `https://kidow.me`
   },
   plugins: [
-    `gatsby-plugin-sitemap`,
     'gatsby-plugin-postcss',
     {
       resolve: 'gatsby-plugin-root-import',
@@ -70,8 +69,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: `UA-152828817-1`,
-      },
+        trackingId: `UA-152828817-1`
+      }
     },
     {
       resolve: `gatsby-plugin-feed`,
