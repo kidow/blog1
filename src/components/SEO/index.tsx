@@ -15,7 +15,7 @@ const ReSEO: React.FunctionComponent<Props> = ({
   meta = [],
   title,
   thumbnail,
-  url
+  url = ''
 }) => {
   const { site } = useStaticQuery(
     graphql`
@@ -33,8 +33,8 @@ const ReSEO: React.FunctionComponent<Props> = ({
   const defaultTitle = site.siteMetadata?.title
   const IMAGE =
     thumbnail ||
-    'https://firebasestorage.googleapis.com/v0/b/kidow-v3.appspot.com/o/thumbnail%2Fsignboard.png?alt=media'
-  const URL = 'https://kidow.me' + url
+    `https://dynamisign.com/api/sign?d=1%EC%9D%B8%20%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%A5%BC%20%EA%BF%88%EA%BE%B8%EB%8A%94%20%EC%9B%B9%20%EA%B0%9C%EB%B0%9C%EC%9E%90%EC%9E%85%EB%8B%88%EB%8B%A4.&t=Kidow's%20%EA%B0%9C%EB%B0%9C%20%EB%B8%94%EB%A1%9C%EA%B7%B8`
+  const URL = `https://kidow.me${url}`
   return (
     <Helmet
       htmlAttributes={{ lang: 'ko' }}

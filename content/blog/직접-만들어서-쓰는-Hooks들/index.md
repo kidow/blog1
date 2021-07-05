@@ -2,7 +2,7 @@
 title: '직접 만들어서 쓰는 Hooks들'
 date: '2021-03-13T16:36:19.542887'
 description: '생산적으로 획기적으로 올라갑니다!'
-thumbnail: 'https://firebasestorage.googleapis.com/v0/b/kidow-v3.appspot.com/o/thumbnail%2F1615263205139?alt=media&token=4711f71a-f38a-4220-821d-145000fc2420'
+thumbnail: 'https://dynamisign.com/api/sign?d=%EC%83%9D%EC%82%B0%EC%A0%81%EC%9C%BC%EB%A1%9C%20%ED%9A%8D%EA%B8%B0%EC%A0%81%EC%9C%BC%EB%A1%9C%20%EC%98%AC%EB%9D%BC%EA%B0%91%EB%8B%88%EB%8B%A4!&t=%EC%A7%81%EC%A0%91%20%EB%A7%8C%EB%93%A4%EC%96%B4%EC%84%9C%20%EC%93%B0%EB%8A%94%20Hooks%EB%93%A4'
 ---
 
 ## useObject 👍
