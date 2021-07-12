@@ -37,7 +37,7 @@ const ReCard: FunctionComponent<Props> = ({
             </span>
           </div>
         </div>
-        <div className="flex-1 flex flex-col">
+        {/* <div className="flex-1 flex flex-col">
           <h4
             itemProp="headline"
             className="font-bold text-sm md:text-base text-gray-100 flex-1"
@@ -52,7 +52,7 @@ const ReCard: FunctionComponent<Props> = ({
         </div>
         <div className="mt-1">
           <div className="text-xs text-gray-500">{date}</div>
-        </div>
+        </div> */}
       </Link>
     </li>
   )
