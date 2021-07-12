@@ -2,7 +2,7 @@
 title: 이미지 생성기를 만들었습니다.
 date: 2021-07-05T12:32:52.573645
 description: 직접 오픈그래프 이미지를 만들 필요 없습니다!
-thumbnail: https://dynamisign.com/api/sign?d=%EC%83%88%EB%A1%9C%EC%9A%B4%20%EA%B8%B0%EC%88%A0%EB%A1%9C%20%EB%8B%A4%EC%8B%9C%20%EC%B0%BE%EC%95%84%EC%99%94%EC%8A%B5%EB%8B%88%EB%8B%A4.&t=%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC%20%EC%9D%B4%EC%A0%84%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%A4.
+thumbnail: https://dynamisign.com/api/sign?d=%EC%A7%81%EC%A0%91%20%EC%98%A4%ED%94%88%EA%B7%B8%EB%9E%98%ED%94%84%20%EC%9D%B4%EB%AF%B8%EC%A7%80%EB%A5%BC%20%EB%A7%8C%EB%93%A4%20%ED%95%84%EC%9A%94%20%EC%97%86%EC%8A%B5%EB%8B%88%EB%8B%A4!&m=dark&t=%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%83%9D%EC%84%B1%EA%B8%B0%EB%A5%BC%20%EB%A7%8C%EB%93%A4%EC%97%88%EC%8A%B5%EB%8B%88%EB%8B%A4.
 ---
 
 깃허브에서 아무 링크나 복사해서 카카오톡에 주소를 붙여 넣으면, 재미있는 사실을 하나 발견할 수 있습니다.
