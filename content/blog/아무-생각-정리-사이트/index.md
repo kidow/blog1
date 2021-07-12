@@ -2,7 +2,7 @@
 title: 아무 생각 정리 사이트
 date: '2021-04-07T12:32:52.573645'
 description: '그때그때 떠오르는 생각을 정리해보자.'
-thumbnail: 'https://dynamisign.com/api/sign?d=%EA%B7%B8%EB%95%8C%EA%B7%B8%EB%95%8C%20%EB%96%A0%EC%98%A4%EB%A1%9C%EB%8A%94%20%EC%83%9D%EA%B0%81%EC%9D%84%20%EC%A0%95%EB%A6%AC%ED%95%B4%EB%B3%B4%EC%9E%90.&t=%EC%95%84%EB%AC%B4%20%EC%83%9D%EA%B0%81%20%EC%A0%95%EB%A6%AC%20%EC%82%AC%EC%9D%B4%ED%8A%B8'
+thumbnail: 'https://dynamisign.com/api/sign?d=%EA%B7%B8%EB%95%8C%EA%B7%B8%EB%95%8C%20%EB%96%A0%EC%98%A4%EB%A5%B4%EB%8A%94%20%EC%83%9D%EA%B0%81%EC%9D%84%20%EC%A0%95%EB%A6%AC%ED%95%B4%EB%B3%B4%EC%9E%90.&t=%EC%95%84%EB%AC%B4%20%EC%83%9D%EA%B0%81%20%EC%A0%95%EB%A6%AC%20%EC%82%AC%EC%9D%B4%ED%8A%B8'
 ---
 
 지금까지 코딩이나 웹서핑을 하면서 항상 느끼는 건데요, 갑자기 떠오른 아이디어가 있다거나 생각이 복잡하게 뒤섞일 때 정리하고픈 적이 저는 한 두 번이 아니었습니다.
