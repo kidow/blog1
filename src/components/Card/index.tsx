@@ -1,58 +1,55 @@
+import { tag } from 'data'
 import { Link } from 'gatsby'
 import React, { FunctionComponent } from 'react'
+import { IPost } from 'types'
+import cheerio from 'cheerio'
 
-interface Props {
-  title: string
-  description: string
-  url: string
-  date: string
-  thumbnail: string
-}
+interface Props extends IPost {}
 interface State {}
 
 const ReCard: FunctionComponent<Props> = ({
   title,
-  description,
   url,
   date,
-  thumbnail
+  thumbnail,
+  tags,
+  html
 }) => {
+  const $ = cheerio.load(html)
+  const description = $.text().substring(0, 100)
   return (
     <li className="w-1/2 md:w-1/4 pb-10 md:px-1.5 px-1">
-      <Link className="flex flex-col h-full relative" to={url} itemProp="url">
-        <div
-          className="overflow-hidden block round relative w-full"
-          style={{ marginBottom: '.375rem' }}
-        >
+      <div
+        className="overflow-hidden round relative w-full flex"
+        style={{ marginBottom: '.375rem' }}
+      >
+        {tags.map((item, key) => (
           <div
-            className="relative overflow-hidden"
-            style={{ paddingTop: '75%' }}
-          >
-            <span className="h-full w-full absolute block inset-0">
-              <img
-                src={thumbnail}
-                alt="thumbnail"
-                className="object-cover h-full w-full rounded-lg"
-              />
-            </span>
-          </div>
-        </div>
-        {/* <div className="flex-1 flex flex-col">
+            key={key}
+            className="rounded-full w-4 h-4 mr-1"
+            // @ts-ignore
+            style={{ background: tag[item] }}
+            title={item}
+          />
+        ))}
+      </div>
+      <Link className="flex flex-col h-full relative" to={url} itemProp="url">
+        <div className="flex flex-col">
           <h4
             itemProp="headline"
-            className="font-bold text-sm md:text-base text-gray-100 flex-1"
+            className="font-bold text-sm md:text-lg text-gray-100 flex-1 mb-4 leading-6"
           >
             {title}
           </h4>
           <p
-            className="text-sm text-gray-500 truncate"
+            className="text-sm text-gray-500 line-clamp-3"
             itemProp="description"
             dangerouslySetInnerHTML={{ __html: description }}
           />
         </div>
         <div className="mt-1">
-          <div className="text-xs text-gray-500">{date}</div>
-        </div> */}
+          <div className="text-xs text-gray-300">{date}</div>
+        </div>
       </Link>
     </li>
   )

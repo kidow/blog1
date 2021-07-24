@@ -3,6 +3,7 @@ title: 빙고 게임 사이트를 만들어봤습니다.
 date: '2021-04-04T12:32:52.573645'
 description: '기존 빙고 게임보다 더욱 섬세합니다!'
 thumbnail: 'https://dynamisign.com/api/sign?d=%EA%B8%B0%EC%A1%B4%20%EB%B9%99%EA%B3%A0%20%EA%B2%8C%EC%9E%84%EB%B3%B4%EB%8B%A4%20%EB%8D%94%EC%9A%B1%20%EC%84%AC%EC%84%B8%ED%95%A9%EB%8B%88%EB%8B%A4!&t=%EB%B9%99%EA%B3%A0%20%EA%B2%8C%EC%9E%84%20%EC%82%AC%EC%9D%B4%ED%8A%B8%EB%A5%BC%20%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B4%A4%EC%8A%B5%EB%8B%88%EB%8B%A4.'
+tags: ['react', 'tailwind', 'typescript']
 ---
 
 #### 제작 기간 : 03.15 ~ 04.04

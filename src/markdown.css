@@ -14,11 +14,12 @@
 }
 
 #markdown h1,
-h2,
-h3,
-h4 {
+#markdown h2,
+#markdown h3,
+#markdown h4 {
   line-height: 1.5;
   margin-bottom: 1rem !important;
+  margin-top: 40px;
 }
 
 #markdown p {
@@ -26,8 +27,15 @@ h4 {
   margin-block-end: 1em;
 }
 
+#markdown p,
+ol,
+ul {
+  color: rgb(156, 163, 175);
+}
+
 #markdown h1 {
   font-size: 2.5rem;
+  color: rgb(229, 231, 235);
 }
 
 #markdown h2 {

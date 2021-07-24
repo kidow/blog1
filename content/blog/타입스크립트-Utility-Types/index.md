@@ -3,6 +3,7 @@ title: '타입스크립트 Utility Types'
 date: '2021-03-17T16:46:45.162265'
 description: '알아두면 언젠가 꼭 써먹을 것들. 이미 자주 쓰는 것들도 있습니다.'
 thumbnail: 'https://dynamisign.com/api/sign?d=%EC%95%8C%EC%95%84%EB%91%90%EB%A9%B4%20%EC%96%B8%EC%A0%A0%EA%B0%80%20%EA%BC%AD%20%EC%8D%A8%EB%A8%B9%EC%9D%84%20%EA%B2%83%EB%93%A4.&t=%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%20Utility%20Types'
+tags: ['typescript']
 ---
 
 타입스크립트 타이핑 시 유용하게 쓰이는 기능들을 모아봤습니다. 익혀두면 실제로 써먹을 데가 많습니다. 이 글은 공식 문서를 번역한 글이기도 합니다.

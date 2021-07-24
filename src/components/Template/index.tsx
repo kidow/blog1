@@ -20,12 +20,12 @@ const BlogPostTemplate = ({ data, path }: PageProps<Data>) => {
       <div className="container max-w-screen-sm mx-auto">
         <ReHeader />
       </div>
-      <main className="container mx-auto max-w-screen-sm pb-10">
-        <img
-          src={post.frontmatter.thumbnail}
-          alt="thumbnail"
-          className="object-cover h-full w-full"
-        />
+      <main className="container mx-auto max-w-screen-sm pb-10 relative">
+        {/* <div className="absolute -left-40">
+          <div className="fixed top-28">
+            <div className="text-lg font-semibold">Kidow</div>
+          </div>
+        </div> */}
         <article
           itemScope
           itemType="http://schema.org/Article"
@@ -34,8 +34,8 @@ const BlogPostTemplate = ({ data, path }: PageProps<Data>) => {
           <h1 itemProp="headline" className="font-bold md:text-5xl text-4xl">
             {post.frontmatter.title}
           </h1>
-          <div className="text-gray-500 mt-1 md:mt-2 text-xs md:text-sm">
-            <div>{post.frontmatter.date}</div>
+          <div className="text-gray-500 mt-1 md:mt-2 text-sm md:text-base">
+            {post.frontmatter.date}
           </div>
           <section
             itemProp="articleBody"
@@ -128,6 +128,7 @@ export const pageQuery = graphql`
         date(formatString: "YYYY년 MM월 DD일")
         description
         thumbnail
+        tags
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {

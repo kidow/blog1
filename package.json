@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kidow <wcgo2ling@gmail.com>",
   "dependencies": {
+    "cheerio": "^1.0.0-rc.10",
     "gatsby": "^3.0.1",
     "gatsby-plugin-feed": "^3.0.0",
     "gatsby-plugin-gatsby-cloud": "^2.0.0",
@@ -32,6 +33,7 @@
     "typeface-montserrat": "0.0.75"
   },
   "devDependencies": {
+    "@tailwindcss/line-clamp": "^0.2.1",
     "@types/node": "^14.14.33",
     "@types/react": "^17.0.3",
     "@types/react-dom": "^17.0.2",
@@ -42,7 +44,7 @@
     "gatsby-plugin-root-import": "^2.0.6",
     "postcss": "^8.2.8",
     "prettier": "2.2.1",
-    "tailwindcss": "^2.0.3"
+    "tailwindcss": "^2.2.7"
   },
   "homepage": "https://kidow.me",
   "keywords": [
