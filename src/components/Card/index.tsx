@@ -15,7 +15,7 @@ const ReCard: FunctionComponent<Props> = ({
   tags,
   html
 }) => {
-  const $ = cheerio.load(html)
+  const $ = cheerio.load(html || '<p></p>')
   const description = $.text().substring(0, 100)
   return (
     <li className="w-1/2 md:w-1/4 pb-10 md:px-1.5 px-1">
