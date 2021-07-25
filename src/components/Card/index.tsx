@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import React, { FunctionComponent } from 'react'
 import { IPost } from 'types'
 import cheerio from 'cheerio'
+import ReTooltip from 'components/Tooltip'
 
 interface Props extends IPost {}
 interface State {}
@@ -24,13 +25,13 @@ const ReCard: FunctionComponent<Props> = ({
         style={{ marginBottom: '.375rem' }}
       >
         {tags.map((item, key) => (
-          <div
-            key={key}
-            className="rounded-full w-4 h-4 mr-1"
-            // @ts-ignore
-            style={{ background: tag[item] }}
-            title={item}
-          />
+          <ReTooltip key={key} content={item}>
+            <div
+              className="rounded-full w-4 h-4 mr-1"
+              // @ts-ignore
+              style={{ background: tag[item] }}
+            />
+          </ReTooltip>
         ))}
       </div>
       <Link className="flex flex-col h-full relative" to={url} itemProp="url">
