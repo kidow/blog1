@@ -2,7 +2,7 @@
 title: 블로그를 이전했습니다
 date: '2021-03-13T12:32:52.573645'
 description: '새로운 기술로 다시 찾아왔습니다.'
-thumbnail: 'https://dynamisign.com/api/sign?d=%EC%83%88%EB%A1%9C%EC%9A%B4%20%EA%B8%B0%EC%88%A0%EB%A1%9C%20%EB%8B%A4%EC%8B%9C%20%EC%B0%BE%EC%95%84%EC%99%94%EC%8A%B5%EB%8B%88%EB%8B%A4.&t=%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC%20%EC%9D%B4%EC%A0%84%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%A4.'
+thumbnail: 'https://dynamisign.com/api/sign?d=%EC%83%88%EB%A1%9C%EC%9A%B4%20%EA%B8%B0%EC%88%A0%EB%A1%9C%20%EB%8B%A4%EC%8B%9C%20%EC%B0%BE%EC%95%84%EC%99%94%EC%8A%B5%EB%8B%88%EB%8B%A4.&i=https://qgcjsixggwsztftamrtt.supabase.co/storage/v1/object/public/uploads/1627328428653&i=https://qgcjsixggwsztftamrtt.supabase.co/storage/v1/object/public/uploads/1627328613997&t=%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC%20%EC%9D%B4%EC%A0%84%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%A4'
 tags: ['gatsby', 'tailwind']
 ---
 
