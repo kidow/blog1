@@ -15,11 +15,11 @@ const IndexPage = ({ data }: PageProps<Data>) => {
       <div className="min-h-screen">
         <div className="container mx-auto">
           <div className="md:px-0 px-6">
-            <div className="mb-12 flex flex-wrap">
+            <div className="mb-12 flex flex-wrap gap-1">
               {tags.map((item, key) => (
                 <div
                   key={key}
-                  className="mr-1 p-1 sm:px-3 font-semibold text-sm sm:text-base cursor-pointer rounded-xl"
+                  className="p-1 border-transparent border hover:border-white sm:px-3 font-semibold text-sm sm:text-base cursor-pointer rounded-xl"
                   // @ts-ignore
                   style={{ background: tag[item] }}
                 >

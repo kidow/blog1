@@ -8,4 +8,10 @@ export interface IPost {
   html: string
 }
 
-export type TTag = 'typescript' | 'gatsby' | 'react' | 'tailwind' | 'firebase'
+export type TTag =
+  | 'typescript'
+  | 'gatsby'
+  | 'react'
+  | 'tailwind'
+  | 'firebase'
+  | 'algorithm'
