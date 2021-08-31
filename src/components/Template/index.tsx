@@ -75,27 +75,6 @@ const BlogPostTemplate = ({ data, path }: PageProps<Data>) => {
         <div>
           <ReComment repo="kidow/blog" theme="github-dark" />
         </div>
-        <Divider />
-        <div className="text-xs md:text-sm shadow-sm text-gray-400 font-medium bg-black rounded-lg p-4">
-          <div className="flex">
-            <div className="mr-2">☕</div>
-            <div>
-              <p>
-                제 포스팅이 도움이 되셨다면, 아래 버튼을 눌러{' '}
-                <b className="text-gray-100">커피 한 잔</b>을 후원해주세요! 더
-                좋은 글을 발행하는 데 큰 도움이 됩니다.
-              </p>
-              <a href="https://ko-fi.com/Z8Z63QW6Y" target="_blank">
-                <img
-                  style={{ border: 0 }}
-                  className="mt-4 h-8"
-                  src="https://cdn.ko-fi.com/cdn/kofi2.png?v=2"
-                  alt="Buy Me a Coffee at ko-fi.com"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
       </main>
       <div className="bg-black">
         <div className="max-w-screen-sm mx-auto">
@@ -125,7 +104,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        date(formatString: "YYYY년 MM월 DD일")
+        date(formatString: "YYYY. MM. DD")
         description
         thumbnail
         tags

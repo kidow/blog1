@@ -28,8 +28,8 @@
 }
 
 #markdown p,
-ol,
-ul {
+#markdown ol,
+#markdown ul {
   color: rgb(156, 163, 175);
 }
 

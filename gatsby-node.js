@@ -52,6 +52,11 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       })
     })
   }
+
+  createPage({
+    path: '/resume',
+    component: require.resolve('./src/pages/resume.tsx')
+  })
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
