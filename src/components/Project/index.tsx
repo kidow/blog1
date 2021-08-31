@@ -33,7 +33,7 @@ const ReProject: FunctionComponent<Props> = ({
           </div>
         )}
         <div>
-          <div className="text-lg">
+          <div className="text-lg text-gray-400 sm:text-gray-300">
             <Link to={link} target="_blank" className="hover:underline">
               {title}
             </Link>
@@ -43,7 +43,7 @@ const ReProject: FunctionComponent<Props> = ({
       </div>
       <div className="leading-8 text-gray-400 mb-1">{children}</div>
       {!!tags && (
-        <div className="flex gap-3">
+        <div className="flex flex-wrap gap-3">
           {tags.map((item, key) => (
             <div
               key={key}

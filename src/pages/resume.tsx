@@ -171,11 +171,21 @@ const ResumePage = () => {
             date="2021년 3월 ~ 2021년 3월"
             link="https://kidow.me"
             image="../kidow.png"
-            tags={['Gatsby.js', 'Typescript']}
+            tags={['Gatsby.js', 'Typescript', 'TailwindCSS']}
           >
             <ReParagraph>
               2019년도부터 만든 첫번째 블로그를 시작으로, 새 버전으로 디자인을
               개편해 나가면서 다시 새롭게 만든 세 번째 블로그입니다.
+            </ReParagraph>
+            <ReParagraph>
+              검색 엔진 최적화를 위해 Next.js를 사용해 왔으나, 서버사이드부터
+              데이터와 리소스를 받아 오는 시간이 너무 큰 이슈 때문에 정적
+              호스팅으로 속도를 개선할 수 있는 <ReBold>Gatsby.js</ReBold>를
+              택했습니다.
+            </ReParagraph>
+            <ReParagraph>
+              주로 제가 배우고 쓰는 기술과 노하우들을 잊지 않기 위해 정리하는
+              식으로 글들을 작성합니다.
             </ReParagraph>
           </ReProject>
           <ReProject

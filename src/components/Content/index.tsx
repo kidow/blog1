@@ -9,11 +9,8 @@ interface State {}
 const ReContent: FunctionComponent<Props> = ({ id, title, children }) => {
   return (
     <div className="sm:flex sm:px-0 px-2">
-      <div className="w-28 my-2 sm:w-56">
-        <h2
-          id={id}
-          className="inline sm:leading-none sm:block text-xl sm:text-2xl"
-        >
+      <div className="w-28 my-2 sm:w-56 mb-5">
+        <h2 id={id} className="inline sm:leading-none sm:block text-2xl">
           <a className="mr-1 sm:mr-0" href={`#${id}`}>
             {title}
           </a>
