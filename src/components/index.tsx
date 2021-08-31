@@ -7,6 +7,9 @@ export { default as ReTooltip } from './Tooltip'
 export { default as ReDivider } from './Divider'
 export { default as ReContent } from './Content'
 export { default as ReBold } from './Bold'
+export { default as ReParagraph } from './Paragraph'
+export { default as ReSkill } from './Skill'
+export { default as ReProject } from './Project'
 
 // Icons
 export { default as ReLogoIcon } from './Icons/Logo'
