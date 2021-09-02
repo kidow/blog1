@@ -14,7 +14,11 @@ import React from 'react'
 const ResumePage = () => {
   return (
     <>
-      <ReSEO title="이력서" />
+      <ReSEO
+        title="이력서"
+        description="더 나은 라이프스타일을 사람들에게 안겨줄 수 있는 서비스를 만들고 싶은 개발자입니다."
+        thumbnail="https://dynamisign.com/api/sign?d=%EB%8D%94%20%EB%82%98%EC%9D%80%20%EB%9D%BC%EC%9D%B4%ED%94%84%EC%8A%A4%ED%83%80%EC%9D%BC%EC%9D%84%20%EC%82%AC%EB%9E%8C%EB%93%A4%EC%97%90%EA%B2%8C%20%EC%95%88%EA%B2%A8%EC%A4%84%20%EC%88%98%20%EC%9E%88%EB%8A%94%20%EC%84%9C%EB%B9%84%EC%8A%A4%EB%A5%BC%20%EB%A7%8C%EB%93%A4%EA%B3%A0%20%EC%8B%B6%EC%9D%80%20%EA%B0%9C%EB%B0%9C%EC%9E%90%EC%9E%85%EB%8B%88%EB%8B%A4.&i=https://dynamisign.com/api/short?id=I7TEEO265&m=light&t=%EC%9D%B4%EB%A0%A5%EC%84%9C%20-%20Kidow"
+      />
       <header className="container max-w-screen-md mx-auto px-2 sm:px-0">
         <div className="flex items-center justify-between">
           <Link to="/">
