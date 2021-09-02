@@ -25,7 +25,6 @@ const PostsPage = ({ data }: PageProps<Data>) => {
                       description={post.frontmatter.description || post.excerpt}
                       thumbnail="https://firebasestorage.googleapis.com/v0/b/kidow-v3.appspot.com/o/thumbnail%2F1615263205139?alt=media&token=4711f71a-f38a-4220-821d-145000fc2420"
                       url={post.fields.slug}
-                      tags={post.frontmatter.tags}
                       html={post.html}
                     />
                   )
@@ -64,7 +63,6 @@ export const pageQuery = graphql`
           title
           description
           thumbnail
-          tags
         }
       }
     }

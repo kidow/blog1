@@ -4,7 +4,6 @@ export interface IPost {
   url: string
   date: string
   thumbnail: string
-  tags: string[]
   html: string
 }
 

@@ -3,7 +3,6 @@ title: '코드 스니펫을 공유합니다'
 date: '2021-03-13T15:17:29.679909'
 description: 'VSCode에서 주로 사용하는 코드 스니펫들입니다. 저장용으로 작성하는 글입니다.'
 thumbnail: 'https://dynamisign.com/api/sign?d=VSCode%EC%97%90%EC%84%9C%20%EC%A3%BC%EB%A1%9C%20%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94%20%EC%BD%94%EB%93%9C%20%EC%8A%A4%EB%8B%88%ED%8E%AB%EB%93%A4%EC%9E%85%EB%8B%88%EB%8B%A4.&i=https://qgcjsixggwsztftamrtt.supabase.co/storage/v1/object/public/uploads/1627328484117&i=https://qgcjsixggwsztftamrtt.supabase.co/storage/v1/object/public/uploads/1627212965661&t=%EC%BD%94%EB%93%9C%20%EC%8A%A4%EB%8B%88%ED%8E%AB%EC%9D%84%20%EA%B3%B5%EC%9C%A0%ED%95%A9%EB%8B%88%EB%8B%A4'
-tags: ['react', 'typescript']
 ---
 
 VSCode에서 제가 사용하는 코드 스니펫을 공유해 볼까 합니다. 이전 블로그에서도 다룬 적이 있습니다.

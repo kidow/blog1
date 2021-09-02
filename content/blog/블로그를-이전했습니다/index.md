@@ -3,7 +3,6 @@ title: 블로그를 이전했습니다
 date: '2021-03-13T12:32:52.573645'
 description: '새로운 기술로 다시 찾아왔습니다.'
 thumbnail: 'https://dynamisign.com/api/sign?d=%EC%83%88%EB%A1%9C%EC%9A%B4%20%EA%B8%B0%EC%88%A0%EB%A1%9C%20%EB%8B%A4%EC%8B%9C%20%EC%B0%BE%EC%95%84%EC%99%94%EC%8A%B5%EB%8B%88%EB%8B%A4.&i=https://qgcjsixggwsztftamrtt.supabase.co/storage/v1/object/public/uploads/1627328428653&i=https://qgcjsixggwsztftamrtt.supabase.co/storage/v1/object/public/uploads/1627328613997&t=%EB%B8%94%EB%A1%9C%EA%B7%B8%EB%A5%BC%20%EC%9D%B4%EC%A0%84%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%A4'
-tags: ['gatsby', 'tailwind']
 ---
 
 이번이 3번째 블로그를 배포하는 거네요. 아마 블로그를 다시 만들 일은 없을 것 같습니다. 앞으로는 이번에 만든 블로그로 계속 갈 예정입니다.

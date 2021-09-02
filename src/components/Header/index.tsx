@@ -7,7 +7,7 @@ interface State {}
 
 const ReHeader: FunctionComponent<Props> = () => {
   return (
-    <header className="h-16 container mx-auto md:px-0 px-6">
+    <header className="h-16 container mx-auto md:px-0 px-6 mb-5">
       <div className="h-full flex items-center justify-between">
         <div className="flex items-center justify-center">
           <Link to="/">
