@@ -4,10 +4,10 @@ module.exports = {
   siteMetadata: {
     title: `Kidow`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`
+      name: `김동욱`,
+      summary: `서울 용산에 살고 있는 주니어랍니다.`
     },
-    description: `1인 개발자를 꿈꾸는 웹 개발자입니다.`,
+    description: `더 편한 라이프스타일을 만들고 싶은 개발자입니다.`,
     siteUrl: `https://kidow.me`
   },
   plugins: [
