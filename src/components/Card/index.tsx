@@ -6,9 +6,14 @@ import cheerio from 'cheerio'
 interface Props extends IPost {}
 interface State {}
 
-const ReCard: FunctionComponent<Props> = ({ title, url, date, html }) => {
+const ReCard: FunctionComponent<Props> = ({
+  title,
+  description,
+  url,
+  date,
+  html
+}) => {
   const $ = cheerio.load(html || '<p></p>')
-  const description = $.text().substring(0, 100)
   return (
     <li className="w-1/2 md:w-1/4 pb-10 md:px-1.5 px-1">
       <Link className="flex flex-col h-full relative" to={url} itemProp="url">
@@ -22,8 +27,9 @@ const ReCard: FunctionComponent<Props> = ({ title, url, date, html }) => {
           <p
             className="text-sm md:text-base text-gray-500 line-clamp-3"
             itemProp="description"
-            dangerouslySetInnerHTML={{ __html: description }}
-          />
+          >
+            {description}
+          </p>
         </div>
         <div className="mt-1">
           <div className="text-xs text-gray-300">{date}</div>

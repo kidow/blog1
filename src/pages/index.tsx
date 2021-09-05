@@ -1,7 +1,6 @@
 import * as React from 'react'
 import { graphql, Link, PageProps } from 'gatsby'
 import { ReCard, ReFooter, ReHeader, ReSEO } from 'components'
-import { tag } from 'data'
 
 type Data = any
 

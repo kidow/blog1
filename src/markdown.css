@@ -97,3 +97,7 @@ code {
 #markdown a:hover {
   text-decoration: underline !important;
 }
+
+.gatsby-highlight {
+  font-size: 16px;
+}
