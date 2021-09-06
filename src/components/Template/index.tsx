@@ -1,13 +1,18 @@
-import * as React from 'react'
+import React, { useEffect } from 'react'
 import { Link, graphql, PageProps } from 'gatsby'
 import { ReFooter, ReHeader, ReComment, ReSEO } from 'components'
+import cheerio from 'cheerio'
 
 type Data = any
 
 const Divider = () => <div className="my-10 w-full bg-gray-800 h-px" />
 
-const BlogPostTemplate = ({ data, path }: PageProps<Data>) => {
+const BlogPostTemplate = ({ data, path, location }: PageProps<Data>) => {
   const post = data.markdownRemark
+  const $ = cheerio.load(post.html)
+  const h2 = $('h2')
+    .toArray()
+    .map(item => item.attribs.id)
   const { previous, next } = data
   return (
     <>
@@ -21,11 +26,23 @@ const BlogPostTemplate = ({ data, path }: PageProps<Data>) => {
         <ReHeader />
       </div>
       <main className="container mx-auto max-w-screen-sm pb-10 relative">
-        {/* <div className="absolute -left-40">
+        <div className="absolute -left-48">
           <div className="fixed top-28">
-            <div className="text-lg font-semibold">Kidow</div>
+            <div className="text-lg font-light text-gray-500 w-40">
+              {h2.map((item, key) => (
+                <a
+                  key={key}
+                  className={`inline-block hover:text-gray-300${
+                    location.hash === `#${item}` ? ' text-gray-300 text-xl' : ''
+                  }`}
+                  href={`#${item}`}
+                >
+                  {item.replaceAll('-', ' ')}
+                </a>
+              ))}
+            </div>
           </div>
-        </div> */}
+        </div>
         <article
           itemScope
           itemType="http://schema.org/Article"

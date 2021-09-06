@@ -8,7 +8,6 @@ thumbnail: 'https://dynamisign.com/api/sign?d=VSCode%EC%97%90%EC%84%9C%20%EC%A3%
 VSCode에서 제가 사용하는 코드 스니펫을 공유해 볼까 합니다. 이전 블로그에서도 다룬 적이 있습니다.
 
 ## 만드는 법
-![make](https://dynamisign.com/api/sign?d=VSCode%EC%97%90%EC%84%9C%20%EC%A3%BC%EB%A1%9C%20%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94%20%EC%BD%94%EB%93%9C%20%EC%8A%A4%EB%8B%88%ED%8E%AB%EB%93%A4%EC%9E%85%EB%8B%88%EB%8B%A4.&t=%EC%BD%94%EB%93%9C%20%EC%8A%A4%EB%8B%88%ED%8E%AB%EC%9D%84%20%EA%B3%B5%EC%9C%A0%ED%95%A9%EB%8B%88%EB%8B%A4)
 
 VSCode - Code - 기본 설정 - 사용자 코드 조각
 

@@ -15,7 +15,7 @@ thumbnail: https://dynamisign.com/api/sign?d=%EC%A7%81%EC%A0%91%20%EC%98%A4%ED%9
 
 이번엔 React 공식 깃허브 주소인데요. 보시면 내용과 수치 등만 다를 뿐 규격과 간격 및 위치는 전부 똑같다는 것을 알 수 있습니다.
 
-# 이미지를 동적으로 생성한다?
+## 이미지를 동적으로 생성한다?
 
 미리 디자인해놓은 html에 텍스트만 동적으로 넣어주고, 그것을 이미지로 변환해서 내보내면 따로 오픈 그래프용 이미지를 만들지 않아도 되는 게 아닐까 하는 생각이 들었습니다.
 
@@ -30,7 +30,7 @@ thumbnail: https://dynamisign.com/api/sign?d=%EC%A7%81%EC%A0%91%20%EC%98%A4%ED%9
 2. 깃허브 GraphQL API로 필요한 데이터를 모은 뒤 [puppeteer](https://github.com/puppeteer/puppeteer)를 사용하여 만들어 둔 html의 스크린샷을 찍는다.
 3. 도입해보니 성능 저하가 있었고, 개선을 통해 성능도 매우 좋아졌다!
 
-# 만든 계기
+## 만든 계기
 
 next.js를 만든 vercel에서는 [og-image](https://og-image.vercel.app/)라는 프로젝트에서 동적으로 오픈그래프 이미지를 생성하는 서비스를 제공합니다. 하지만, 이 서비스는 한글 폰트가 깨져서 나온다는 단점이 존재했습니다. 또한, 깃허브만큼 상세하게 표현할 수 있는 수단이 있지는 않습니다.
 
