@@ -25,6 +25,11 @@
 #markdown p {
   margin-block-start: 1em;
   margin-block-end: 1em;
+  font-weight: 300;
+}
+
+#markdown strong {
+  font-weight: 600;
 }
 
 #markdown p,

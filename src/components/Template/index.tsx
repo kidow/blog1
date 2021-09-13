@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { Link, graphql, PageProps } from 'gatsby'
-import { ReFooter, ReHeader, ReComment, ReSEO } from 'components'
+import { ReFooter, ReHeader, ReSEO, ReReaction } from 'components'
 import cheerio from 'cheerio'
 
 type Data = any
@@ -90,7 +90,7 @@ const BlogPostTemplate = ({ data, path, location }: PageProps<Data>) => {
         </div>
         <Divider />
         <div>
-          <ReComment repo="kidow/blog" theme="github-dark" />
+          <ReReaction />
         </div>
       </main>
       <div className="bg-black">
