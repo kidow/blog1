@@ -2,9 +2,10 @@ import React, { FunctionComponent } from 'react'
 
 interface Props {
   headings: string[]
+  hash: string
 }
 
-const ReAffix: FunctionComponent<Props> = ({ headings }) => {
+const ReAffix: FunctionComponent<Props> = ({ headings, hash }) => {
   return (
     <div className="absolute -left-48">
       <div className="fixed top-28">
@@ -13,7 +14,7 @@ const ReAffix: FunctionComponent<Props> = ({ headings }) => {
             <div key={key}>
               <a
                 className={`inline-block hover:text-gray-300${
-                  location.hash === `#${item}` ? ' text-gray-300 text-xl' : ''
+                  hash === `#${item}` ? ' text-gray-300 text-xl' : ''
                 }`}
                 href={`#${item}`}
               >

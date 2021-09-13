@@ -12,7 +12,7 @@ const BlogPostTemplate = ({ data, path, location }: PageProps<Data>) => {
   const $ = cheerio.load(post.html)
   const headings = $('h2')
     .toArray()
-    .map(item => item.attribs.id)
+    .map((item) => item.attribs.id)
   const { previous, next } = data
   return (
     <>
@@ -26,7 +26,7 @@ const BlogPostTemplate = ({ data, path, location }: PageProps<Data>) => {
         <ReHeader />
       </div>
       <main className="container mx-auto max-w-screen-sm pb-10 relative">
-        <ReAffix headings={headings} />
+        <ReAffix headings={headings} hash={location.hash} />
         <article
           itemScope
           itemType="http://schema.org/Article"
