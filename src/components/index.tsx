@@ -10,6 +10,7 @@ export { default as ReParagraph } from './Paragraph'
 export { default as ReSkill } from './Skill'
 export { default as ReProject } from './Project'
 export { default as ReReaction } from './Reaction'
+export { default as ReAffix } from './Affix'
 
 // Icons
 export { default as ReLogoIcon } from './Icons/Logo'

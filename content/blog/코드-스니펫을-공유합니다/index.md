@@ -44,11 +44,9 @@ VSCode - Code - 기본 설정 - 사용자 코드 조각
 "react tsx": {
 	"prefix": "tsx",
 	"body": [
-		"import React, { FunctionComponent } from 'react'",
+		"import  { FunctionComponent } from 'react'",
 		"",
-		"export interface Props {",
-		"",
-		"}",
+		"export interface Props {}",
 		"interface State {}",
 		"",
 		"const $1: FunctionComponent<Props> = () => {",
@@ -59,6 +57,54 @@ VSCode - Code - 기본 설정 - 사용자 코드 조각
 	],
 	"description": "react tsx"
 }
+```
+
+```json
+// 페이지 생성기
+"page generator": {
+	"prefix": "page",
+    "body": [
+      "interface State {}",
+      "",
+      "const $1 = () => {",
+      "  return <>$1</>",
+      "}",
+      "",
+      "export default $1"
+    ],
+    "description": "page generator"
+}
+```
+
+```json
+// Jest 파일 생성기
+"typescript react test": {
+    "prefix": "tsxtest",
+    "body": [
+      "import React from 'react'",
+      "import { render } from '@testing-library/react'",
+      "",
+      "describe('$1', () => {",
+      "    it('$2', () => {",
+      "        $3",
+      "    })",
+      "})"
+    ],
+    "description": "typescript react test"
+  },
+  "typescript it": {
+    "prefix": "tsxit",
+    "body": ["it('$1', () => {", "    $2", "})"],
+    "description": "typescript it"
+  },
+```
+
+```json
+// 컴포넌트 내보낼 때
+"export default": {
+    "prefix": "exp",
+    "body": ["export { default as Re$1 } from './$1'"]
+},
 ```
 
 ```json

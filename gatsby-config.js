@@ -25,7 +25,7 @@ module.exports = {
       resolve: `gatsby-plugin-typescript`,
       options: {
         isTSX: true,
-        jsxPragma: `jsx`,
+        jsxPragma: `React`,
         allExtensions: true
       }
     },

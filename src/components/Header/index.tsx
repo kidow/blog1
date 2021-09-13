@@ -3,7 +3,6 @@ import { Link } from 'gatsby'
 import { ReLogoIcon } from 'components'
 
 interface Props {}
-interface State {}
 
 const ReHeader: FunctionComponent<Props> = () => {
   return (
