@@ -152,19 +152,47 @@ import { ReButton, ReCheckbox, ReSwitch } from 'components'
 
 ## components 폴더가 복잡해지는 경우
 
-이미 유명한 Atomic React의 규약을 따라 5개의 폴더로 세분화합니다.
+규모가 작은 프로젝트의 경우는 단순히 components 폴더에 컴포넌트를 몰아 넣습니다.
+
+![](components1.png)
+
+하지만 규모가 커지는 경우, 이미 유명한 [Atomic Design](https://arc.js.org/)의 규약을 참고하여 4개의 폴더로 세분화합니다.
+
+![](components2.png)
 
 ## 절대 경로 모듈 시스템
 
 모듈을 불러올 때, 어떤 폴더에서 불러왔는지 최상위 폴더명만 기입해서 가독성을 높입니다. 절대 경로만 잘 적용해놓으면 클릭 시 바로 해당 모듈로 이동해서 확인할 수도 있습니다.
 
-또한 이름만 알고 있으면 타이핑만으로 빠르게 해당 모듈을 불러올 수도 있습니다.
+```typescript
+export { default as ReButton } from './Button'
+export { default as ReInput } from './Input'
+export { default as ReSEO } from './SEO'
+export { default as ReHeader } from './Header'
+
+// 또는
+
+export { default as ReButton } from './atoms/Button'
+export { default as ReInput } from './atoms/Input'
+
+export { default as ReSEO } from './molecules/SEO'
+
+export { default as ReHeader } from './organisms/Header'
+```
+
+가장 중요한 것은 모든 컴포넌트는 어떤 폴더에 있어도 불러올 때는 **'components'**에서 불러와야 한다는 것입니다.
+
+```typescript
+import { ReButton, ReSEO, ReHeader } from 'components'
+```
 
 ## index
 
 모듈의 이름은 항상 **폴더**가 기준이고, 파일명은 반드시 index.[확장자] 식으로 짓습니다. 모듈 시스템에서 index로 이름을 지은 파일들은 기입하지 않아도 자동으로 인식하기 때문에 **가독성**면에서 더 좋은 코드가 될 수 있습니다.
 
-컴포넌트의 경우에는 한 컴포넌트에 tsx, storybook, test 파일을 한 번에 넣어서 관리할 수도 있습니다.
+컴포넌트의 경우 한 컴포넌트에 tsx, storybook, jest 파일을 한 번에 넣어서 관리할 수도 있습니다.
+
+![](component.png)
 
 ## state는 무조건 객체로 선언
 
