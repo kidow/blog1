@@ -24,7 +24,7 @@ const ResumePage = () => {
           <Link to="/">
             <ReLogoIcon className="w-20" />
           </Link>
-          <div className="text-sm text-gray-600">21년 9월 1일 갱신됨.</div>
+          <div className="text-sm text-gray-600">21년 9월 14일 갱신됨.</div>
         </div>
       </header>
       <div className="container max-w-screen-md mx-auto mb-20">
@@ -109,12 +109,27 @@ const ResumePage = () => {
           </ReSkill>
           <ReSkill title="클라우드 플랫폼" description="Cloud Platform">
             <ul>
+              <li>
+                <ReBold>Supabase</ReBold>
+              </li>
               <li>Firebase</li>
             </ul>
           </ReSkill>
         </ReContent>
         <ReDivider />
         <ReContent id="Careers" title="경력">
+          <ReProject
+            title="페칭"
+            date="2021년 9월 13일 ~ 현재"
+            link="https://fetching.co.kr"
+            image="../fetching.jpg"
+            tags={['React.js', 'Styled-Components', 'Redux']}
+          >
+            <ReParagraph>
+              온라인 명품샵 <ReBold>페칭</ReBold>에서 프론트엔드 개발자로 일하고
+              있습니다.
+            </ReParagraph>
+          </ReProject>
           <ReProject
             title="링크플래너"
             date="2019년 9월 - 2020년 10월"
