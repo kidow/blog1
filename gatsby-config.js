@@ -5,12 +5,13 @@ module.exports = {
     title: `Kidow`,
     author: {
       name: `김동욱`,
-      summary: `서울 용산에 살고 있는 주니어랍니다.`
+      summary: `서울 용산에 살고 있는 풀스택 주니어입니다.`
     },
     description: `더 편한 라이프스타일을 만들고 싶은 개발자입니다.`,
     siteUrl: `https://kidow.me`
   },
   plugins: [
+    'gatsby-plugin-sitemap',
     'gatsby-plugin-postcss',
     {
       resolve: 'gatsby-plugin-root-import',
@@ -98,7 +99,7 @@ module.exports = {
         feeds: [
           {
             serialize: ({ query: { site, allMarkdownRemark } }) => {
-              return allMarkdownRemark.nodes.map(node => {
+              return allMarkdownRemark.nodes.map((node) => {
                 return Object.assign({}, node.frontmatter, {
                   description: node.excerpt,
                   date: node.frontmatter.date,
