@@ -13,7 +13,8 @@ export function useObject<T>(
 ): [
   T,
   (obj: Partial<T>, callback?: (state: T) => void) => void,
-  (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void
+  (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void,
+  (keys?: Array<keyof T>) => void
 ] {
   const [state, setState] = useState<T>(initialObject)
   const callbackRef = useRef<(state: T) => void>()
@@ -32,6 +33,14 @@ export function useObject<T>(
       setState((prevState) => ({ ...prevState, [name]: value })),
     [state]
   )
+  const arrayToObject = (keys: Array<keyof T>): T => {
+    if (!keys.length) return initialObject
+    const initial: any = {}
+    keys.reduce((acc, cur) => (initial[cur] = ''), initial)
+    return initial
+  }
+  const onResetState = (keys?: Array<keyof T>) =>
+    setState(keys ? arrayToObject(keys) : initialObject)
   useEffect(() => {
     if (isFirstCallbackCall.current) {
       isFirstCallbackCall.current = false
@@ -39,7 +48,7 @@ export function useObject<T>(
     }
     callbackRef.current?.(state)
   }, [state])
-  return [state, onChange, onEventChange]
+  return [state, onChange, onEventChange, onResetState]
 }
 ```
 
@@ -58,7 +67,7 @@ interface State {
 }
 
 const Component = () => {
-    const [{ email, password, loading }, setState, onChange] = useObject<State>({
+    const [{ email, password, loading }, setState, onChange, onResetState] = useObject<State>({
         email: '',
         password: '',
         loading: false
@@ -76,6 +85,8 @@ const Component = () => {
             <input value={email} name="email" onChange={onChange} />
             <input value={password} name="password" onChange={onChange} />
             <button type="submit">로그인</button>
+            <button onClick={() => onResetState()}>모든 State 초기화</button>
+            <button onClick={() => onResetState(['state1', 'state2'])}>특정 State 초기화</button>
         </form>
     )
 }

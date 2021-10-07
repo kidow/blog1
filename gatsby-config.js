@@ -5,7 +5,7 @@ module.exports = {
     title: `Kidow`,
     author: {
       name: `김동욱`,
-      summary: `서울 용산에 살고 있는 풀스택 주니어입니다.`
+      summary: `풀스택 주니어입니다.`
     },
     description: `더 편한 라이프스타일을 만들고 싶은 개발자입니다.`,
     siteUrl: `https://kidow.me`
