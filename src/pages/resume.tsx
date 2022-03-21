@@ -35,12 +35,10 @@ const ResumePage = () => {
           </div>
           <div className="flex-1 flex">
             <ul className="w-28 font-semibold text-gray-400">
-              <li>PHONE</li>
               <li>EMAIL</li>
               <li>LOCATION</li>
             </ul>
             <ul className="text-gray-500">
-              <li>010-5140-5480</li>
               <li>
                 <a href="mailto:wcgo2ling@gmail.com">wcgo2ling@gmail.com</a>
               </li>

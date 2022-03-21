@@ -13,7 +13,7 @@ export function useObject<T>(
 ): [
   T,
   (obj: Partial<T>, callback?: (state: T) => void) => void,
-  (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void,
+  (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => void,
   (keys?: Array<keyof T>) => void
 ] {
   const [state, setState] = useState<T>(initialObject)
@@ -29,7 +29,7 @@ export function useObject<T>(
   const onEventChange = useCallback(
     ({
       target: { name, value }
-    }: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>): void =>
+    }: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>): void =>
       setState((prevState) => ({ ...prevState, [name]: value })),
     [state]
   )
@@ -81,7 +81,7 @@ const Component = () => {
     }
 
     return (
-        <form onSubmit={onSubmit} >
+        <form onSubmit={onSubmit}>
             <input value={email} name="email" onChange={onChange} />
             <input value={password} name="password" onChange={onChange} />
             <button type="submit">로그인</button>
