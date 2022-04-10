@@ -14,7 +14,9 @@ const ReHeader: FunctionComponent<Props> = () => {
           </Link>
         </div>
         <div className="flex items-center justify-between gap-3 text-sm">
-          <Link to="/resume">Résumé</Link>
+          <Link target="_blank" to="https://resume.kidow.me">
+            Résumé
+          </Link>
           <a href="https://github.com/kidow" target="_blank">
             Github
           </a>
