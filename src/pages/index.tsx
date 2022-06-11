@@ -10,6 +10,15 @@ const IndexPage = ({ data }: PageProps<Data>) => {
     <>
       <ReSEO title="개발 블로그" />
       <ReHeader />
+      <div className="container mx-auto md:px-0 px-6">
+        <a
+          href="https://blog.kidow.me"
+          target="_blank"
+          className="p-4 block bg-gray-600 text-gray-200 rounded-lg mb-4"
+        >
+          블로그를 이전했습니다. (클릭 시 이동)
+        </a>
+      </div>
       <div className="min-h-screen">
         <div className="container mx-auto">
           <div className="md:px-0 px-6">

@@ -13,7 +13,6 @@ const BlogPostTemplate = ({ data, path, location }: PageProps<Data>) => {
   const headings = $('h2')
     .toArray()
     .map((item) => item.attribs.id)
-  console.log('headings', headings)
   const { previous, next } = data
   return (
     <>
